@@ -1,0 +1,228 @@
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.carousel {
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 0;
+  border:1px solid #000000;
+  -webkit-box-shadow: 0px 2px 4px #000000;
+  -moz-box-shadow: 0px 2px 4px #151617;
+  box-shadow: 0px 2px 4px #000000;
+}
+#whycarousel.carousel {
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 1;
+  border:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  min-height: 320px;
+}
+.why-inner {
+	padding:0 80px;
+}
+.carousel-inner {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.carousel .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -moz-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.carousel .item > img {
+  display: block;
+  line-height: 1;
+}
+.carousel .active,
+.carousel .next,
+.carousel .prev {
+  display: block;
+}
+.carousel .active {
+  left: 0;
+}
+.carousel .next,
+.carousel .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel .next {
+  left: 100%;
+}
+.carousel .prev {
+  left: -100%;
+}
+.carousel .next.left,
+.carousel .prev.right {
+  left: 0;
+}
+.carousel .active.left {
+  left: -100%;
+}
+.carousel .active.right {
+  left: 100%;
+}
+#content .carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #bfbfbf;
+  text-align: center;
+  background: #000000;
+  border: 0px solid #bfbfbf;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  /*opacity: 0.5;
+  filter: alpha(opacity=50);*/
+  text-decoration: none;
+}
+#content .carousel-control.right {
+  left: auto;
+  right: 15px;
+}
+#content #whycarousel .carousel-control {
+  top:30px;
+}
+#content .carousel-control:hover {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  background: #191C1E;
+  background: rgba(25, 28, 30, 0.90);
+}
+.carousel-caption h4,
+.carousel-caption p {
+  color: #ffffff;
+  line-height: 20px;
+}
+.carousel-caption h4 {
+  margin: 0 0 5px;
+}
+.carousel-caption p {
+  margin-bottom: 0;
+}
+
+.defaultdesktop {
+	margin:0 0 20px 0;
+	border:1px solid #000000;
+    -webkit-box-shadow: 0px 2px 4px #151617;
+  	-moz-box-shadow: 0px 2px 4px #151617;
+  	box-shadow: 0px 2px 4px #151617;
+}
+.social {
+    margin:30px 0 30px 0;
+	/*border-top: 1px solid #3B4245;*/
+    padding:20px 0;
+}
+img {
+	max-width: 100%;
+}
+.belowthefold {
+    border-top: 1px solid #3B4245;
+    padding-top: 30px;
+    overflow: hidden;
+    clear: both;
+}
+.screenshots {
+	border-top: 1px solid #3B4245;
+	padding-top:20px;
+}
+.features h4 {
+	font-size: 110%;
+	padding-left: 14px;
+}
+.features h4.open {
+	background:url(images/collapse-open.png) left center no-repeat;
+}
+.features h4.close {
+	background:url(images/collapse-close.png) left center no-repeat;
+}
+.features h4 a {
+	text-decoration: none;
+}
+.collapse-inner {
+	background:#000000;
+	padding:10px;
+	margin-bottom: 20px;
+	margin-top: -10px;
+	border-top: 1px solid #000000;
+}
+.collapse-inner p {
+	margin:0;
+}
+.why {
+	display:none;
+}
+/* Media Queries for responsive design -------------------------------------- */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+    
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+  .defaultdesktop {
+		float:left;
+		margin:0 20px 20px 0;
+		max-width:50%;
+	}
+	.features {float:left;width:49%;}
+	.screenshots {float:right;width:46%;border:0;padding:0;}
+	.why {
+		display:block;
+		border-top: 1px solid #1a1d1e;
+		padding-top:20px;
+		clear:both;
+	}
+}
+
+@media only screen and (min-width: 920px) {
+  /* Style adjustments for viewports 920px and over go here */
+  .defaultdesktop {
+    max-width:38%;
+  }
+}

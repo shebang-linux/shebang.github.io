@@ -1,0 +1,133 @@
+#content a.downloadButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #383839;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #383839;
+	box-shadow:inset 0px 1px 0px 0px #383839;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3B4245), color-stop(1, #2E3436) );
+	background:-moz-linear-gradient( center top, #3B4245 5%, #2E3436 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3B4245', endColorstr='#2E3436');
+	background-color:#3B4245;
+	border:1px solid #232729;
+	display:block;
+	color:#dfdfdf;
+	font-family:'PT Sans', Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:normal;
+	padding:20px 0;
+	text-decoration:none;
+    text-align:center;
+	text-shadow:1px 1px 0px #000000;
+    width:49%;
+    margin-bottom:20px;
+}
+#content a.downloadButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4A5457), color-stop(1, #3D4547) );
+	background:-moz-linear-gradient( center top, #4A5457 5%, #3D4547 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A5457', endColorstr='#3D4547');
+	background-color:#1b1c1d;
+}
+#content a.downloadButton:active {
+	position:relative;
+	top:1px;
+}
+.bits32 {
+    float:left;
+}
+.bits64 {
+    float:right;
+}
+#download64,
+#download32 {
+    clear:both;
+    -moz-box-shadow:inset 0px 1px 0px 0px #3B4245;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #3B4245;
+	box-shadow:inset 0px 1px 0px 0px #3B4245;
+    /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #292a2b), color-stop(1, #1b1c1d) );
+	background:-moz-linear-gradient( center top, #292a2b 5%, #1b1c1d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#292a2b', endColorstr='#1b1c1d');*/
+	background-color:#2E3436;
+    border:1px solid #232729;
+    padding:10px; 
+    margin-bottom:20px;
+    display:none;
+}
+
+/* root element for tabs  */
+ul.tabs {  
+	clear:both;
+    margin:0 !important; 
+	padding:0;
+	height:30px;
+	border-bottom:1px solid #3B4245;	 	
+}
+
+/* single tab */
+ul.tabs li {  
+	float:left;	 
+	padding:0; 
+	margin:0;  
+	list-style-type:none;	
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	float:left;
+	display:block;
+    font-size:13px;
+	padding:5px 30px;	
+	text-decoration:none;
+	border:1px solid #3B4245;	
+	border-bottom:0px;
+	height:18px;
+	background-color:#2E3436;
+	color:#fff;
+	margin-right:2px;
+	position:relative;
+	top:1px;	
+	outline:0;
+}
+
+ul.tabs a:hover {
+	background-color:#3B4245;
+	color:#fff;
+}
+	
+/* selected tab */
+ul.tabs a.current {
+	background-color:#32383B;
+	border-bottom:1px solid #32383B;	
+	color:#dfdfdf;	
+	cursor:default;
+}
+
+	
+/* tab pane */
+.panes div {
+	display:none;
+	border:1px solid #3B4245;
+	border-width:0 1px 1px 1px;
+	min-height:150px;
+	padding:15px 20px;
+	background-color:#32383B;	
+    margin-bottom:10px;
+}
+
+.social {
+    margin:30px 0 30px 0;
+	/*border-top: 1px solid #3B4245;*/
+    padding:20px 0;
+}
+/* Media Queries for responsive design -------------------------------------- */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+    
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+    
+}
+
+@media only screen and (min-width: 920px) {
+  /* Style adjustments for viewports 920px and over go here */
+    
+}

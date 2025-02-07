@@ -1,0 +1,19 @@
+.thankyou {
+  font-size: 200%;
+  line-height: 150%;
+  text-align: justify;
+}
+
+/* Media Queries for responsive design -------------------------------------- */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+    
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+}
+
+@media only screen and (min-width: 920px) {
+  /* Style adjustments for viewports 920px and over go here */
+}
